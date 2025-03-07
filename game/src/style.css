@@ -1,0 +1,286 @@
+/* top header */
+header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    height: 18vh;
+    background-color: #000d1e;
+    /* justify-content: center;
+    align-items: center; */
+    color: #fbf1e5;
+    z-index: 999;
+    display: none;
+}
+.header{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 18vh;
+    width: 54vw;
+    left: 23vw;
+    color: #fbf1e5;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+}
+.title{
+    font-size: 23px;
+    font-family: 'Yuji Boku', serif;
+    z-index: 999;
+    display: none;
+}
+.subtitle{
+    font-size: 10px;
+    font-family: 'Klee One', cursive;
+    z-index: 999;
+    display: none;
+}
+
+/* game */
+#game {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BG {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.Player {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(1);
+    z-index: 20;
+    bottom: -50px;
+    left: 0px;
+    border-radius: 100%;
+}
+
+.NPC {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    bottom: 0px;
+    border-radius: 100%;
+}
+
+#NPC1 {
+    left: 20%;
+}
+#NPC2 {
+    left: 45%;
+    width: 100px;
+    height: 100px;
+}
+#NPC3 {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+}
+#NPC4 {
+    left: 30%;
+    width: 100px;
+    height: 100px;
+}
+#NPC5 {
+    left: 65%;
+    width: 100px;
+    height: 100px;
+}
+
+.Portal {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+
+.ActionButtom {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    z-index: 30;
+    display: none;
+    border-radius: 100%;
+}
+
+
+#leftArrow {
+    right: 250px;
+    bottom: 25px;
+}
+
+#rightArrow {
+    right: 25px;
+    bottom: 25px;
+}
+
+#interact {
+    left: 25px;
+    bottom: 25px;
+    background-position: center;
+}
+
+.TextBox {
+    height: 140px;
+    background: #1c1c1c;
+    border-radius: 5px;
+    box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+    color: #F5EAC8;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    word-spacing: 3px;
+    width: 400px;
+    z-index: 30;
+}
+
+
+
+/* 手機狀態 */
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    header, .header, .title, .subtitle{
+        display: flex;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .BG{
+        margin-bottom: 500px;
+    }
+
+    .ActionButtom {
+        display: block;
+    }
+
+    .Player{
+        bottom: 220px;
+    }
+
+    .Portal{
+        bottom: 250px;
+    }
+
+    .TextBox {
+        height: 12%;
+        width: 60%;
+        font-size: 24px;
+    }
+
+    #NPC1.Mobile{
+        bottom: 230px;
+        left: 50%;
+        width: 225px;
+        height: 225px;
+    }
+    #NPC2.Mobile {
+        bottom: 250px;
+        left: 30%;
+    }
+    #NPC3.Mobile {
+        bottom: 250px;
+        left: 60%;
+    }
+    #NPC4.Mobile {
+        bottom: 250px;
+        left: 20%;
+    }
+    #NPC5.Mobile {
+        bottom: 250px;
+        left: 40%;
+    }
+
+}
+
+/* 平板狀態 */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    header, .header, .title, .subtitle{
+        display: flex;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .BG{
+        margin-bottom: 500px;
+    }
+
+    .ActionButtom {
+        display: block;
+    }
+
+    .Player{
+        bottom: 220px;
+    }
+
+    .Portal{
+        bottom: 250px;
+    }
+
+    .TextBox {
+        height: 12%;
+        width: 60%;
+        font-size: 24px;
+    }
+
+    #NPC1.Mobile{
+        bottom: 230px;
+        left: 50%;
+        width: 225px;
+        height: 225px;
+    }
+    #NPC2.Mobile {
+        bottom: 250px;
+        left: 30%;
+    }
+    #NPC3.Mobile {
+        bottom: 250px;
+        left: 60%;
+    }
+    #NPC4.Mobile {
+        bottom: 250px;
+        left: 20%;
+    }
+    #NPC5.Mobile {
+        bottom: 250px;
+        left: 40%;
+    }
+
+}
+
+/* 電腦狀態 */
+@media screen and (min-width: 1200px) {
+    
+
+} 
