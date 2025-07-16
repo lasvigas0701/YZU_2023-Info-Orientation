@@ -19,12 +19,12 @@ const app = initializeApp(firebaseConfig);
 
 function start(){
   document.getElementById("form1").addEventListener("submit", function(event) {
-    event.preventDefault(); // 阻止默认的表单提交行为
+    event.preventDefault(); 
     processFormData1();
   });
 
   document.getElementById("form2").addEventListener("submit", function(event) {
-    event.preventDefault(); // 阻止默认的表单提交行为
+    event.preventDefault(); 
     processFormData2();
   });
 }
@@ -57,7 +57,7 @@ function processFormData1(){
 
   var parsedDate = new Date(birth);
   var year = parsedDate.getFullYear() - 1911;
-  var month = parsedDate.getMonth() + 1; // 月份从0开始，所以要加1
+  var month = parsedDate.getMonth() + 1; 
   var day = parsedDate.getDate();
   var newbirth = year + '/' + month + '/' + day;
 
@@ -111,7 +111,7 @@ function processFormData2(){
 
   var parsedDate = new Date(birth);
   var year = parsedDate.getFullYear() - 1911;
-  var month = parsedDate.getMonth() + 1; // 月份从0开始，所以要加1
+  var month = parsedDate.getMonth() + 1; 
   var day = parsedDate.getDate();
   var newbirth = year + '/' + month + '/' + day;
 
